@@ -12,6 +12,13 @@ Once you have completed your solution you should make sure you commit and push y
 Store the names of a few of your friends in a list called names. Print each person’s name by accessing each element in the list, one at a
 
  time.
+names = ["Michael", "Jhon", "Mike"]
+
+print(names[0])
+
+print(names[1])
+
+print(names[2])
 
 
 
@@ -26,6 +33,13 @@ Start with the list you used in Exercise 1, but instead of just
 printing each person’s name, print a message to them. The text of each message should be the same, but each message should be 
 
 personalized with the person’s name.
+names = ["Michael", "Jhon", "Mike"]
+
+print("Good morning " + (names[0]))
+
+print("Good morning " + (names[1]))
+
+print("Good morning " + (names[2]))
 
 
 
@@ -38,6 +52,14 @@ personalized with the person’s name.
 Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list
 
 to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
+transportations = ["Train", "Bus", "Motorcycle"]
+
+print("I prefer using " + transportations[0] + " rather than a Bus")
+
+print("I'll use the " + transportations[1] + " if I don't have enough money")
+
+print("I would like to own a " + transportations[2] + " if the weather is moderate")
+
 
 &nbsp;
 &nbsp;
@@ -47,6 +69,14 @@ to print a series of statements about these items, such as “I would like to ow
 If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d
 
 like to invite to dinner. Then use your list to print a message to each person, invitingthem to dinner.
+
+guests = ["Michael Renier C. Bagadiong ", "Cesar James Mangcoy ", "Philip Salvador "]
+
+print("Greetings!" + guests[0] + "I would like to invite you in a dinner with me and my friends.")
+
+print("Greetings! " + guests[1] + "I would like to invite you in a dinner with me and my friends.")
+
+print("Greetings! " + guests[2] + "I would like to invite you in a dinner with me and my friends.")
 
 &nbsp;
 &nbsp;
@@ -102,6 +132,65 @@ Think of at least five places in the world you’d like to visit.
 
 •	 Use sort() to change your list so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
 
+guests = ["Michael Renier C. Bagadiong ", "Cesar James Mangcoy ", "Philip Salvador "]
+print("Greetings!" + guests[0] + ", I would like to invite you in a dinner with me and my friends.")
+print("Greetings!" + guests[1] + ", I would like to invite you in a dinner with me and my friends.")
+print("Greetings!" + guests[2] + ", I would like to invite you in a dinner with me and my friends.")
+print(guests[0] + "can't make it for today's dinner, So I'll try to invite Jack Hammer instead.")
+guests[0] = "Jack Hammer "  # indexing was used to replace the value in a list
+
+print("Greetings!" + guests[0] + ", I would like to invite you in a dinner with me and my friends.")
+print("Greetings!" + guests[1] + ", I would like to invite you in a dinner with me and my friends.")
+print("Greetings!" + guests[2] + ", I would like to invite you in a dinner with me and my friends.")
+
+# Exercise 6
+guests = ["Michael Renier C. Bagadiong ", "Cesar James Mangcoy ", "Philip Salvador "]
+print("Greetings!" + guests[0] + ", I would like to invite you in a dinner with me and my friends.")
+print("Greetings!" + guests[1] + ", I would like to invite you in a dinner with me and my friends.")
+print("Greetings!" + guests[2] + ", I would like to invite you in a dinner with me and my friends.")
+print(guests[0] + "can't make it for today's dinner, So I'll try to invite Jack Hammer instead.")
+
+guests[0] = "Jack Hammer "  # indexing was used to replace the value in a list
+
+print("Greetings!" + guests[0] + ", I would like to invite you in a dinner with me and my friends.")
+print("Greetings!" + guests[1] + ", I would like to invite you in a dinner with me and my friends.")
+print("Greetings!" + guests[2] + ", I would like to invite you in a dinner with me and my friends.")
+
+print("Things got unexpected, I can only invite two people for dinner.")
+
+print(guests.pop(0) + ",I'm sorry that I can't invite you to dinner because of unexpected things that happened.")
+print(guests[0] + ",you are still invited to come later for our dinner")
+print(guests[1] + ",you are still invited to come later for our dinner")
+del guests
+
+# Exercise 7
+locations = ["Thailand", "Italy", "America", "Paris", "Japan"]
+
+print(locations)
+
+print(sorted(locations))  # alphabetical
+
+print(f"Original order: {locations}")
+
+print(sorted(locations, reverse=True))  # reversed alphabetical
+
+print(f"Original order: {locations}")
+
+locations.reverse()  # reversing the original order
+
+print(locations)
+
+locations.reverse()  # reversing location beck towards its original form
+
+print(locations)
+
+locations.sort()  # alphabetical order
+
+print(locations)
+
+locations.sort(reverse=True)  # sorted that was reversed
+
+print(locations)
 &nbsp;
 &nbsp;
 

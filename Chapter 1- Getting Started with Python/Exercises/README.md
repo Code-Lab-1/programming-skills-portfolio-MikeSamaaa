@@ -18,12 +18,22 @@ Twinkle, twinkle, little star,
 Twinkle, twinkle, little star, 
 	How I wonder what you are
 
+print("Twinkle, twinkle, little star,\n\t\tHow I wonder what you are!\n\t\t\t\tUp above the world so high,"
+      "\n\t\t\t\tLike a diamond in the sky.\nTwinkle, twinkle, little star,\n\t\tHow I wonder what you are")
+
 &nbsp;
 &nbsp;
 &nbsp;
 ## Exercise 2: Print the Version of Python :ballot_box_with_check:
 
  Write a Python program to get the Python version you are using.
+
+import sys
+
+print("Python version: " + sys.version)
+
+print(sys.version_info)
+
 
 
 &nbsp;
@@ -33,11 +43,24 @@ Twinkle, twinkle, little star,
 
 Write a Python program to display the current date and time.
 
+import datetime
+
+current_time = datetime.datetime.now()
+
+print(f"Time and Date: {current_time}")
 &nbsp;
 &nbsp;
 &nbsp;
 ## Exercise 4: Strings Concatination :ballot_box_with_check:
 Write three strings in different variables and print the output as one string.
+sweet_candy = "SnowBear "
+
+lollipop = "Milkita "
+
+gum = "VFresh "
+
+print(sweet_candy + lollipop + gum) # + operator was used to compile the 3 variables in 1 string
+
 &nbsp;
 &nbsp;
 &nbsp;
@@ -45,7 +68,13 @@ Write three strings in different variables and print the output as one string.
 ## Exercise 5: Compute area of Circle :ballot_box_with_check:
 
 Write a Python program which accepts the radius of a circle from the user and compute the area.
+from math import pi
 
+Radius = float(input("Enter the Radius of the Circle: "))
+
+circle_area = (pi * Radius**2)
+
+print(circle_area)
 &nbsp;
 &nbsp;
 &nbsp;

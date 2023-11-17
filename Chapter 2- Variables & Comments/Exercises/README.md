@@ -15,6 +15,10 @@ Assign a message to a variable, and print that message.
 Then change the value of the variable to a new message, and print the new
 message.
 
+message = "I love Python"
+
+print(message)
+
 &nbsp;
 &nbsp;
 &nbsp;
@@ -26,6 +30,7 @@ Your output should look something like the following, including the quotation ma
 
 Albert Einstein once said, “A person who never made a mistake never tried anything new.
 
+print('Socrates once said, "The unexamined life is not worth living." ')
 
 &nbsp;
 &nbsp;
@@ -40,6 +45,15 @@ Print the name once, so the whitespace around the name is displayed.
 
 Then print the name using each of the three stripping functions, lstrip(), rstrip(), and strip().
 
+name = "\tMichael\n"
+
+print(name.lstrip())
+
+print(name.rstrip())
+
+print(name.strip())
+
+
 
 &nbsp;
 &nbsp;
@@ -47,7 +61,9 @@ Then print the name using each of the three stripping functions, lstrip(), rstri
 ## Exercise 4: Favorite Number :ballot_box_with_check:
 Use a variable to represent your favorite number. Then,using that variable, create a message that reveals your favorite number. Print
 that message.
+favorite_number = 4
 
+print("My favorite number is " + str(favorite_number))
 &nbsp;
 &nbsp;
 &nbsp;
@@ -59,6 +75,15 @@ A girl heads to a computer shop to buy some USB sticks. She loves USB sticks and
 Write a programme that calculates how many USB sticks she can buy and how many pounds she will have left.
 
 You will to use the arithmetic operators to complete this exercise.
+udget = 50
+
+cost_of_usb = 6
+
+usbs_she_can_buy = Budget // cost_of_usb  # floor division was used
+
+remaining_money = 50 % 6  # the percent symbol returns the remainder of the numbers you divided
+
+print(f"It is possibe for her to buy {usbs_she_can_buy} usbs and receive a change of £{remaining_money}")
 
 &nbsp;
 &nbsp;
